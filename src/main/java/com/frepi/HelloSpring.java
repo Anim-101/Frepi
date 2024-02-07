@@ -15,6 +15,11 @@ public class HelloSpring {
         return "Hello Spring";
     }
 
+    @RequestMapping("/HelloWorld/")
+    String helloWorld() {
+        return "Hello World";
+    }
+
     public static void main(String [] args) {
         SpringApplication.run(HelloSpring.class, args);
     }
